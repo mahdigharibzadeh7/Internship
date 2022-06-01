@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.mydiv{
+    display: flex;
+    justify-content: space-around;
+    background-color: #ff7859;
+    height: 50px;
+    padding: 30px 40px;
+}
+ul{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+ul li{
+    cursor: pointer;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background: #ffb143;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+ul li:nth-child(odd) {
+    background: #fffb9e;
+}
+
+ul li:hover {
+    background: #ffe962;
+}
+
+ul li.checked {
+    background: #ff7859;
+    color: #ffb143;
+    text-decoration: line-through;
+}
+
+.close {
+    padding: 12px 16px;
+    float: right;
+}
+
+.close:hover {
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+}
+
+input {
+    margin: 0;
+    border: none;
+    border-radius: 5px;
+    width: 75%;
+    padding: 10px;
+    font-size: 16px;
+}
+  
+.add {
+    padding: 10px;
+    width: 25%;
+    background: #fffb9e;
+    color: #ffb143;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.add:hover {
+    background-color: #fffcd8;
+}
