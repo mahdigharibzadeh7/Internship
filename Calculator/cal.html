@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="cal.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="lcd">
+            <div class="computing-container">
+                <p id="display"></p>
+                <p class="resualt"></p>
+            </div>
+        </div>
+        <div class="cal-container">
+            <div class="button-container">
+                <div class="button" onclick="compute(7)">7</div>
+                <div class="button" onclick="compute(4)">4</div>
+                <div class="button" onclick="compute(1)">1</div>
+                <div class="button" onclick="compute(0)">0</div>
+            </div>
+            <div class="button-container">
+                <div class="button" onclick="compute(8)">8</div>
+                <div class="button" onclick="compute(5)">5</div>
+                <div class="button" onclick="compute(2)">2</div>
+                <div class="button" onclick="compute('.')">.</div>
+            </div>
+            <div class="button-container">
+                <div class="button" onclick="compute(9)">9</div>
+                <div class="button" onclick="compute(6)">6</div>
+                <div class="button" onclick="compute(3)">3</div>
+                <div class="button" onclick="compute('=')">=</div>
+            </div>
+            <div class="button-container">
+                <div class="button" onclick="compute('+')">+</div>
+                <div class="button" onclick="compute('-')">-</div>
+                <div class="button" onclick="compute('*')">*</div>
+                <div class="button" onclick="compute('/')">/</div>
+            </div>
+            <div class="button-container clear">
+                <div class="button clear" onclick="compute('del')">DEL</div>
+                <div class="button clear" onclick="compute('ac')">AC</div>
+            </div>
+        </div>
+    </div>
+    <script src="cal.js"></script>
+</body>
+</html>
